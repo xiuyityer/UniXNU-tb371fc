@@ -21,6 +21,18 @@
 
 官网路由由同步器分配；若 `tb371fc` 路由未被占用，中文页面预计为 `/zh/devices/tb371fc`。这只是规则推导，尚不代表页面已上线。
 
+## 本次发现的上游阻碍
+
+截至 2026-11-08 本次检查，最近一次上游同步（北京时间 2026-11-08 01:39；run `42397382890`）失败，报错：
+
+```text
+device catalog: Split this search into smaller queries: unixnu in:name,description fork:true is:public
+```
+
+当前同步器在单个搜索超过 1000 条结果时主动退出。该错误发生在搜索阶段，不能据此判断本仓库的记录无效。需要上游修复搜索拆分或其他发现策略并成功同步，才可完成官网自动收录。仅等待定时任务并不能保证解决同一故障。
+
+[失败的上游同步运行](https://github.com/UniXNU/UniXNU/actions/runs/42397382890)。本次只读取公开日志，未以用户身份联系上游。
+
 ## 官方依据
 
 - [设备仓库指南](https://unixnu.com/zh/porting/device-repository)
