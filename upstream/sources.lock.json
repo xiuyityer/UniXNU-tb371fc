@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "name": "pipa",
+      "repository": "https://github.com/xVanTuring/UniXNU-pipa",
+      "commit": "cdb3d62771e31d48d832853ee0c90964346d78da",
+      "role": "pinned build reference"
+    },
+    {
+      "name": "adreno650",
+      "repository": "https://github.com/xVanTuring/Adreno650",
+      "commit": "01db67e0620fe0e70ab8cbce533cbdb1369f5922",
+      "role": "pinned build reference"
+    },
+    {
+      "name": "adreno-metal",
+      "repository": "https://github.com/xVanTuring/AdrenoMetal",
+      "commit": "2ff4be9eabd2b1c1078f2d88e75e84d3d589a465",
+      "role": "pinned build reference"
+    },
+    {
+      "name": "arm-smmu-4k",
+      "repository": "https://github.com/xVanTuring/ArmSmmu4K",
+      "commit": "6d4441db4b850cfd5a265a5bec59ac629a8f78cd",
+      "role": "pinned build reference"
+    },
+    {
+      "name": "UniXNU",
+      "repository": "https://github.com/UniXNU/UniXNU",
+      "commit": "0fc0fc1f9ddd0fbd4787738afef38667df5e0a95",
+      "role": "local build base"
+    },
+    {
+      "name": "sheng-adreno-allocation",
+      "repository": "https://github.com/UniXNU/Adreno740",
+      "commit": "6fa7bae2a5b3b523e790eb3e0348af4d98969e4d",
+      "role": "V129 allocation policy reference only"
+    },
+    {
+      "name": "metal2vulkan",
+      "repository": "https://github.com/steelbrain/metal2vulkan",
+      "commit": "720ef1ce9ae2a2068999a8675717418b9416283e",
+      "role": "translator with 21 Pipa patches"
+    }
+  ]
+}

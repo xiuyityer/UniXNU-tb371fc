@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/FFT-infra/NativeUfs-alioth",
+  "revision": "d6bd207347cb9c870452ff7d2e6ae488b9b13feb",
+  "upstream": "https://github.com/UniXNU/ShengUfs",
+  "files": {
+    "DpuWindow.h": "ec72f2e34abe9ee13edc39c4435303b81e48284efcbdc25a48adefe673022759",
+    "GccUfs.h": "1ef7030533184ecb7efebb8ad3a6fa8e155a8b5b9eea19a6a2af758027d483c3",
+    "Info.plist": "b32259d457790217e50e36e868a7bcaa99c7625eca6d47212e761d230ebd4e49",
+    "LICENSE": "d3cdce3b19df47f2e4dcafdfd54909eb9bc64ac722645ceb1feae58695c97b09",
+    "NativeUfs.cpp": "70956993d0d07af2bf590a4b7df5c22682d9b167338b6b1d3064a8907f7913eb",
+    "NativeUfsBsdRootABI.h": "3a5ffd26f381fa7ead8e5b109ba6779300b0ae3129a94a788ec90e1252abe159",
+    "NativeUfsBsdRootCore.cpp": "9c5107442d4bda4472761ca8de4c5ee841c900cf2af23d4d75886bc9f6c65d3d",
+    "NativeUfsBsdRootCore.h": "87e938d5e61438da43c785d38731e52378bfecc277c9b9e4aab1928ca0624376",
+    "RootCommands.h": "6850ac785d472d94236f8fdf684444231c4a4386bc97fcd8eefef1f0a7220806",
+    "RootDiagnostics.h": "0ad96da909e87d161b17694e32768a9d84500da96f975dcc6913535c413fde29",
+    "RootLayout.h": "c630f7bd3fa4b89714f54398376544e778624c8ccff63bfe74b5df82953081f1",
+    "RootPublication.h": "3c289b44f4d7c082b3f214eda2d4225f53860dd007f4a89402bdc910f268aeda",
+    "RootQueue.h": "001d06dcc4c3c7073704cffa3105a28d11e3e97985e7fcb49b8cc107216248bf",
+    "RootTransportLayout.h": "77699362f09e103ceda0d5f216d0be7749cdc1e88c6143ddd15ceb11dfd42e91",
+    "RootWindowRead.h": "6b224b78fcf95fe9d6e6157a665dffdf0dad68c84be009efe9fe4926924b3fc3",
+    "SmmuTakeover.h": "bce6681a9ffa605ea9ed2f6e9e4df722f626ff7aab550203376da6e2156873ad",
+    "TransferPoll.h": "742df51cdce6d06df6bf93294176f01305c9d1359c8ffdfb99daff7b76a1ece3",
+    "WholeUserdataDisk.h": "125dbf3559dfb10d9b45c61f59a74aee59cfb40375788b564200287eedf84b9a",
+    "WholeUserdataRoot.h": "6c3fad104232a13126b1a9d2aac7cbddbc6975cf52c218eb78798d677a01a2aa"
+  }
+}

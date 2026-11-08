@@ -1,0 +1,1362 @@
+{
+  "schema_version": 1,
+  "baseline": "V129",
+  "files": [
+    {
+      "path": "drivers/A650Gmu/A650Gmu.c",
+      "sha256": "65fe38759188e65de9da700146339f8498116e94b05fcc17202d939dc43c4646",
+      "bytes": 25532,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/A650Gmu/A650Gmu.h",
+      "sha256": "33a1f59f6ab2cdfb593df5b8a2839640c96a7d6ee02b8b3593447dcb985f2f9d",
+      "bytes": 5816,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/A650Gmu/BootUiTraceCore.h",
+      "sha256": "5b9bfc83e3d97beb35587e59ea06d6c0c35cfb7acbd008d459d76ab2cfb0082c",
+      "bytes": 3429,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/A650Gmu/BootUiTraceDetails.h",
+      "sha256": "b9c0d9afbc80359a08f2aabb87cf6ee94c5227e64212dffb05ea8d9e08a8473e",
+      "bytes": 1612,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/A650Gmu/ButtonsCore.h",
+      "sha256": "bbe1dd172e1da33daaa3c7f4470ba1f7879f56f1721149793e95c72fdcd4a842",
+      "bytes": 2460,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/A650Gmu/GesturesCore.h",
+      "sha256": "21965146ecd24670d9117d7147114d3ad8366aaea73bcc5b098fccf3976fe82e",
+      "bytes": 3194,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/A650Gmu/GpuPowerBoard.h",
+      "sha256": "3b245995f63ae13f9435b64c0a7374e5bd196e0c99ba3b826adc8605c89e3087",
+      "bytes": 22006,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/A650Gmu/NativeBatteryBoard.h",
+      "sha256": "988b340a313a378f2b0f22b6e92228b2d60e97aa417f73eec2c00579f2cfccd1",
+      "bytes": 4412,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/A650Gmu/SmmuBypass.h",
+      "sha256": "630e95b9bae463e54a942197cffca643f2f4e0189b03d29fdfaaba9d37cca0c7",
+      "bytes": 5124,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/A650Gmu/TouchBoard.h",
+      "sha256": "a4c67492a26127863f26265a47dc439324e6cf7e19a20e0f0aa6933834fcfb67",
+      "bytes": 6062,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoA740HwInit.h",
+      "sha256": "008e9a923e78798ef54d3c4c37f44bbadd35911515d8832fe04793e51f31588c",
+      "bytes": 6682,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoABI.h",
+      "sha256": "20ac9298bb390d86788c1fc58155e1f9581ffa942e222752efc95c67cb5670d2",
+      "bytes": 7733,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoBoard.h",
+      "sha256": "648fefb774118d174bf5ef42ab89579edaf781c4f4f08bce393ee7100e54e19b",
+      "bytes": 1502,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoClient.h",
+      "sha256": "ac6a35c5b2e3080655cdf41870f0d0551d0961b773192f7adf2effe283f5e7aa",
+      "bytes": 2506,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoCpInit.cpp",
+      "sha256": "bfd3a365446a732dda040f0776d195293fd961de9a9313d9b40bab43189f4b66",
+      "bytes": 3559,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoCpInit.h",
+      "sha256": "2c5810cc734c522b7a77c3a3cb4413f68758a045df6f1616959e6fd13b958be4",
+      "bytes": 2112,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoCpu.cpp",
+      "sha256": "b22d613d1c8a73e33ef1ccaf02e0e5096a96c7a7c08ec911dea7b6df4e5e0515",
+      "bytes": 8858,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoFirmware.h",
+      "sha256": "78d42a674a06aed96a5b206b927964772222eda33f93ae6d6509b6a5e9aba75b",
+      "bytes": 961,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGmuConfig.h",
+      "sha256": "e07d205c1fa429c1e1d4966e50a7de9bfe7d591027c54d15e11562421a421a1c",
+      "bytes": 866,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGmuContext.cpp",
+      "sha256": "40c6ac185638b614cac5fa0bb8a8dfe08c073d2f7f0cfffe10dca6301741b05f",
+      "bytes": 6607,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGmuContext.h",
+      "sha256": "41a4492d1b3f67dafec27317c899b271a9afb35d6e7bf7861ab4379deb6b6849",
+      "bytes": 4275,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGmuMemory.cpp",
+      "sha256": "12a09b352eec6aa04f86b3f488e648228fecfd8d9eee5dc376fd2ee2e9fe3af8",
+      "bytes": 4286,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGmuMemory.h",
+      "sha256": "3c6c40f2bf742fb7970577a195f70802b1918ac9cf420bab42d9e69d1f8973b6",
+      "bytes": 3490,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGmuPlatform.h",
+      "sha256": "5634adbedceac94f0bb75b2207caeff256115b5d9dcebf38fd88efba4d979d1d",
+      "bytes": 1426,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGmuService.h",
+      "sha256": "69eb1d457b8bb4798cbc739b13ae86e2eb500e89ed13720deb8ed0728d55e04d",
+      "bytes": 1165,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGpu.h",
+      "sha256": "340259bbb2261da3cf4c0c0c0c8b96278de4980ab997286e7acd35a0f92d5dcf",
+      "bytes": 3337,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGpuContext.cpp",
+      "sha256": "fae2e5d99f4b0b56f2beeba578455708207109304750353ab1898eb13ad77c47",
+      "bytes": 6913,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoGpuContext.h",
+      "sha256": "fcceb6b2e90dc71793365627bd4daede85446f3974d105729b0eea842361a33d",
+      "bytes": 3995,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoHandleIndex.h",
+      "sha256": "12a0627f00b8131452806cf81639ddd69c54d1b79367c39cee2bc48158afd202",
+      "bytes": 2402,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoIrq.cpp",
+      "sha256": "2160e8f94734ab44e96bbd6b0aa76aeb3fc56ee780cf5e44920327a773715dc9",
+      "bytes": 5705,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoIrq.h",
+      "sha256": "a368519294e86bd753d5013d5834daaa12f4865067fda1e0422ae8c3904f403e",
+      "bytes": 2853,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoKernelTime.h",
+      "sha256": "c7fcd3e339984278c3c5af98b0de87a72471e04c9855f42ff5934c271d71ec06",
+      "bytes": 482,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoMemory.cpp",
+      "sha256": "7ba40b0bee5fec26435e8df963db868fdb76feb3eb71bc22982f5c38f60ee73c",
+      "bytes": 18803,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoMemory.h",
+      "sha256": "dde0833489b02f834a2cc7356152141d137fa887595cbfdfb1929022473c62fa",
+      "bytes": 8358,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoPublish.cpp",
+      "sha256": "013e43c09db8e5d3e444a3a0f1f56d14e381df47097689478811b20a162f5183",
+      "bytes": 48729,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoPwrup.h",
+      "sha256": "708830fae4f6a5cea765992d44135126d7a034a239adece94f094d862819e889",
+      "bytes": 1864,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoPwrupRegs.h",
+      "sha256": "8067d9625e922173912eea09e6a504d9c1b31234d4656f8dd4148855882918e1",
+      "bytes": 745,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoRing.cpp",
+      "sha256": "2039b6e86c82a0510e7d759340e2454af963504b9ba07b81c8119f90fc859d74",
+      "bytes": 21380,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoRing.h",
+      "sha256": "629535884a13a3b6af8f9a4d2d8213d2f01c847b1b191466599a10d89b86d275",
+      "bytes": 8471,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoSha256.h",
+      "sha256": "4c4f1a23f146c1370615ee52912b9bb0c2a3b919ccf14e07314460ffcdb34a74",
+      "bytes": 531,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoSmmuContext.cpp",
+      "sha256": "f10804e39ee96e4af966fac7bf19e089a236d74d4004d3a9e18e7a6c54917cd3",
+      "bytes": 3204,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoSmmuContext.h",
+      "sha256": "93ddf63bc1ddf449d3998a4fdc88946bf17e2d303cc6310b872b5d2bb04d68f5",
+      "bytes": 3953,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoSmmuMemory.cpp",
+      "sha256": "422a1c2b14408bc2a4855822b7110a4c8b09c31cb5b9820b85dbde648a31d657",
+      "bytes": 2546,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoSmmuMemory.h",
+      "sha256": "d2988cc8fe670e569dd14d9556924784994782b6f9efdc1715d2ab281baf3b90",
+      "bytes": 1439,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoSmmuService.h",
+      "sha256": "6e5a666a4c6b28c9dc3ae6c59ce4c55ccb1ef63ac49901cf56759f0dd5a905df",
+      "bytes": 1090,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoStatus.h",
+      "sha256": "7305cce3eefbf63176fd08f3d6eb92aa4b874fffb37bda94666fea53d62a2a34",
+      "bytes": 1146,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoSubmit.cpp",
+      "sha256": "3d6a2f858c1f19a26e1acaf30ad714af621915c41418aecbf1475e39feba5ba0",
+      "bytes": 25208,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoSubmit.h",
+      "sha256": "67895a714be90acb4ea415c3839db316fbda1ab4d477779b18bffba4f84164a1",
+      "bytes": 5231,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoTimer.cpp",
+      "sha256": "281221b6fc5c1175b71d7c54fda8275bab1b08d7b9819f7c60e4e4b10026f22a",
+      "bytes": 2214,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoTimer.h",
+      "sha256": "41fd744b29cb12a107d86b6e74a0abe33fa877326e2471e2d534241b016341eb",
+      "bytes": 1908,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoUserClient.cpp",
+      "sha256": "b7c5164a84019128cfcb10756850d73dda261c59c50d26d17a6604810de20efd",
+      "bytes": 34142,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoUserClient.h",
+      "sha256": "833d07459fa8ceef040148700b9e126739d829396dde4c9e98c444f7cfdce075",
+      "bytes": 8127,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoVm.cpp",
+      "sha256": "8bfebd75a35a9f6f5421f5333a2575754034d60173ca5c3c30b5afa9c5880424",
+      "bytes": 34967,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoVm.h",
+      "sha256": "96696be28803c64471a326f590d3d17565f61d4ab679abb6d23e9feb51761c12",
+      "bytes": 10398,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/Adreno650/NativeAdrenoVmAlias.h",
+      "sha256": "35fe908bd80389a18e395eb3bfdd5a40cb2c133fe6634dbead8d68cf2822eeea",
+      "bytes": 2240,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoFirmware/AdrenoFirmware.c",
+      "sha256": "c3cc714a65ce90216a0fc5c6f0e102ae1769c45e559c08f94a0b5f6fa3e97070",
+      "bytes": 2655,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoFirmware/AdrenoFirmware.h",
+      "sha256": "6b2e308f2feae92642f21da2667c3665a2e234ef79e7c5400e7aac7dd3c5b7ed",
+      "bytes": 1059,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoFirmware/AdrenoHfi.c",
+      "sha256": "5d7da3145157fd945d626d4567c95626fdbbc8fb6a65d8f67701ffb1e64f7d2e",
+      "bytes": 5944,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoFirmware/AdrenoHfi.h",
+      "sha256": "615cb21d1c7bd3729e3b36d361f0f78bbaacb1bd8931a268797e00505e05f0b8",
+      "bytes": 3449,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoFirmware/AdrenoHfiStartup.c",
+      "sha256": "0bdc60bb35aae37e01a2466e6ecf95ed7c444389526ec8471e2a2422624a6c81",
+      "bytes": 8433,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoFirmware/AdrenoHfiStartup.h",
+      "sha256": "03878418998c4e75ccf5a3ee9112631f676ae5a604cb453c52ea480e0826f4e1",
+      "bytes": 4016,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoFirmware/AdrenoHfiVotes.c",
+      "sha256": "20f021f8eeb9d32def09c3d5d58c6fd97e96b77932113f373d634ab6d184abda",
+      "bytes": 4062,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoFirmware/AdrenoHfiVotes.h",
+      "sha256": "6e8e89a0b947868f103b241ca86e3c25aa6229a54bc581022728b4eda9070f4c",
+      "bytes": 2239,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoPM4/AdrenoConstants.h",
+      "sha256": "177b1fd388aba50cd878f40923ec8fdc1f13a6137b59f8ee35aecec8cd044413",
+      "bytes": 2391,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoPM4/AdrenoPM4.c",
+      "sha256": "c4b0227859a1e771c5f349524b718b08444f518ef960bfa4b50f6fd4ab30ad2f",
+      "bytes": 2939,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoPM4/AdrenoPM4.h",
+      "sha256": "86f4e84eece0f2e67f786d03cea8b82c696377fc5af9f890dd164bbfe24abd29",
+      "bytes": 1630,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoPM4/AdrenoRaster.h",
+      "sha256": "f531885d93e77b96f2572da994764c6f840f91ebb9fdcd89e3f104f8badffb85",
+      "bytes": 2014,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoPM4/AdrenoShader.h",
+      "sha256": "aa5cf9f26088ae12e9839e3ac5ec502f861e2fd78b0ec88c5576570795652f9a",
+      "bytes": 2008,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/AdrenoPM4/AdrenoVPC.h",
+      "sha256": "8f6f830cc9bb80e0456b8f148667b1222034b08e0b22d3f2a3d9f8b72a517fca",
+      "bytes": 1920,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4K.c",
+      "sha256": "0adb19b483e56e723014ed6cfe2c29f9d9735ae2770f62cf0057b22937dbd157",
+      "bytes": 5786,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4K.h",
+      "sha256": "e25063b9134afc7eb79e7c030bc2858608cf0ade5da714d5dfd600fee5007e8e",
+      "bytes": 3161,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KAudit.c",
+      "sha256": "594739cebc43926b1cb0a0e965867bcf1edfb90fab9c51465b65fa47be3755c1",
+      "bytes": 9848,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KAudit.h",
+      "sha256": "1f313acd46db3dfecc115b8c885c5c43f7d23f73690a6157f900dfc77b2c9f6a",
+      "bytes": 3203,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KContext.c",
+      "sha256": "b8e32e32d1f07e71de65f31b12963ab8b01c05755f8c60c2d6f40cb03fe4eca8",
+      "bytes": 4753,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KContext.h",
+      "sha256": "c842e78f37eab2e7cbba28cb89f4b993d9202503e75fee9e49a871101b936e53",
+      "bytes": 2163,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KLive.c",
+      "sha256": "ad7176398cf1bda9ba506c3b6d2eeb643adc59ef47d5d13d3eecff367083c0d6",
+      "bytes": 33135,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KLive.h",
+      "sha256": "035918bf469517cc020d81fc6b47d8acb31c5a49cd3775a4a9bb206c8113a21a",
+      "bytes": 7669,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KMmio.c",
+      "sha256": "439e6b50a3431c607611aa3b9af1f4f548e53b2fa1c452645a458c0606f7df38",
+      "bytes": 1724,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KMmio.h",
+      "sha256": "face552cf67de969e8e741c0195496949f2c62b418d973e4d71a02f18ab83109",
+      "bytes": 799,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KProgram.c",
+      "sha256": "7586c4da3d9cc2699559807d4ded41f88cba9a01c58ae36dab73117496e63712",
+      "bytes": 12637,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KProgram.h",
+      "sha256": "97a325c5a581d30153ca498f3b538e1b0e1ddf14d5a944769d2f82349210382a",
+      "bytes": 5066,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KStreams.c",
+      "sha256": "b5e602b2181d28038679a80e7783ca5751d40676e0b3da91941cf41aafd93f95",
+      "bytes": 9454,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KStreams.h",
+      "sha256": "1cfca0b4e3acba420cc829098b52d61c4905ec64d2aa57883dedae9dfb212969",
+      "bytes": 3858,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KTableMemory.c",
+      "sha256": "b39d3d4fc292b921672c089e930986345637aa029b422821867c72e7203feb92",
+      "bytes": 1613,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/ArmSmmu4KTableMemory.h",
+      "sha256": "316b85ee835686744feb7777b4216917578833e3ff510aeecc4bbe8325568f86",
+      "bytes": 1286,
+      "component": "gpu-backend-v129"
+    },
+    {
+      "path": "package/Tb371fcGpu/GpuProbe.cpp",
+      "sha256": "b28aa635679c5f1059fa002fa380ffb6e0cdf87b1a5301a1ce0a79aff3371031",
+      "bytes": 93433,
+      "component": "gpu-board-v126"
+    },
+    {
+      "path": "package/Tb371fcGpu/GpuPowerBoard.h",
+      "sha256": "3b245995f63ae13f9435b64c0a7374e5bd196e0c99ba3b826adc8605c89e3087",
+      "bytes": 22006,
+      "component": "gpu-board-v126"
+    },
+    {
+      "path": "package/Tb371fcGpu/A650Gmu.h",
+      "sha256": "33a1f59f6ab2cdfb593df5b8a2839640c96a7d6ee02b8b3593447dcb985f2f9d",
+      "bytes": 5816,
+      "component": "gpu-board-v126"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeAdrenoAccelerator.cpp",
+      "sha256": "e5df79db4329a9254a320ee38c1014b357b7f7ba9218d707359bc233be4eb724",
+      "bytes": 2922,
+      "component": "gpu-board-v126"
+    },
+    {
+      "path": "package/Tb371fcDisplay/DisplaySupport.cpp",
+      "sha256": "2909b2cd558ee0ce80f0a1fe5a81617e09d785d96eda13b258f1209afab829c4",
+      "bytes": 4062,
+      "component": "gpu-display-v126"
+    },
+    {
+      "path": "package/Tb371fcDisplay/NativeGOPPresenter.cpp",
+      "sha256": "4690f4170b3a8e604f2704b799de52d86a01fbf17f3b3210e0941f2613e598f8",
+      "bytes": 21012,
+      "component": "gpu-display-v126"
+    },
+    {
+      "path": "package/Tb371fcDisplay/NativeGOPWire.h",
+      "sha256": "f318da02e91844eb6552584bee1e50081dff633d6238c0c97e83edd91dd7f779",
+      "bytes": 1338,
+      "component": "gpu-display-v126"
+    },
+    {
+      "path": "package/Tb371fcDisplay/TbGpuCacheExport.cpp",
+      "sha256": "a36168c74e3e516693259240891be1cab506ee95b6c77083c2124a6abbb4d0ed",
+      "bytes": 238,
+      "component": "gpu-display-v126"
+    },
+    {
+      "path": "package/Tb371fcDisplay/DisplayLifecycle.cpp",
+      "sha256": "f87260d78bad8640456bfecc14ef336514840d9d6754f82ef25282e8ae3df44c",
+      "bytes": 5428,
+      "component": "input-startup-v128"
+    },
+    {
+      "path": "package/Tb371fcTouch/Tb371fcTouchPublish.c",
+      "sha256": "acce878cec655f6148780cafc523ae3afedc0dc346355ff13045c53ae11b0893",
+      "bytes": 1655,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/NovatekProtocol/NvtProtocol.h",
+      "sha256": "3a5c75ae6fc70c5b84bed5658350ff1cdedc71662411a31426d2e6f965e4b423",
+      "bytes": 9128,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/QcomGeniSpi/GeniSpi.h",
+      "sha256": "e73891e4571c5323bca27aaf987bafa002856dfa1dcee156ff31b119e2d3ae3c",
+      "bytes": 9152,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/Tb371fcTouch/Tb371fcTouchBoard.h",
+      "sha256": "85aced5c3d009bfe44868dd91cf1ee0d061bbe8663ad181ea00c4fa8b4d55777",
+      "bytes": 2223,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/Tb371fcTouch/Tb371fcTouchReport.c",
+      "sha256": "f46bef28473a21a41b888fc93e1108948515e5e549da51be63f906073ef13719",
+      "bytes": 2915,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/NovatekProtocol/NvtProtocol.c",
+      "sha256": "e443553c2ca93990925ac1a65cde3b01d594a770bf802d15b800d83f9e0c22be",
+      "bytes": 20893,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/Tb371fcTouch/Tb371fcTouchPublish.h",
+      "sha256": "4c3a9e298e11f297be88b190dd7150f5f300300bc170523ee045f63cd49d86a7",
+      "bytes": 351,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/QcomGeniSpi/GeniSpi.c",
+      "sha256": "2042cfc9647391e24d5a558202046425ac62a05adfc73afe769367b8374e3f91",
+      "bytes": 15536,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/Tb371fcTouch/Tb371fcTouchReport.h",
+      "sha256": "d79d95e38c574f42660a1587da9b15422fa78e946a8579e57100cd05ccf22afa",
+      "bytes": 1358,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/Tb371fcTouch/Tb371fcTouchRuntime.cpp",
+      "sha256": "2924ebc70a9a870edea0fc3766cfcfe2b508c33b667ca53eb42fd56cb9c24167",
+      "bytes": 11527,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/ShengHidInput/NativeHidInput.cpp",
+      "sha256": "ea357ccfe634b078cc47a7c0180cd10f01fef099701654eb64dc87afd9f76ac2",
+      "bytes": 28726,
+      "component": "touch-v121"
+    },
+    {
+      "path": "package/Tb371fcInput/Tb371fcHidLifecycle.cpp",
+      "sha256": "deda8a724f4a3f3eedaa05d0d1eb8ef602b66ba0f962ab52a6ce105ffb456759",
+      "bytes": 5261,
+      "component": "buttons-v122"
+    },
+    {
+      "path": "package/Tb371fcButtons/Tb371fcButtonsRuntime.cpp",
+      "sha256": "9def77794b1d3b6e89aba65a5d00c2a1792ed5f3892756fc813b84a3b16e219b",
+      "bytes": 6537,
+      "component": "buttons-v122"
+    },
+    {
+      "path": "package/Tb371fcButtons/Tb371fcButtonsCore.h",
+      "sha256": "83bfd44110a9e0e5eb5fc7755d07c14a927999216136003d068a85a6f6409e21",
+      "bytes": 1141,
+      "component": "buttons-v122"
+    },
+    {
+      "path": "package/PlatformPower/PublicationLifecycle.h",
+      "sha256": "768cadea0086aff0ef931cdb68f5ec42af43e64981ca7dfe04bd0877d67bc180",
+      "bytes": 1436,
+      "component": "device-integration-source"
+    },
+    {
+      "path": "package/PlatformPower/Tb371fcPlatformPower.cpp",
+      "sha256": "3ada77ff3349b7f2c31d886c300d62eecf8cdcba14d818551bc90192e8fe1532",
+      "bytes": 10082,
+      "component": "device-integration-source"
+    },
+    {
+      "path": "package/Tb371fcFastbootReturn/FastbootReturn.c",
+      "sha256": "e0c292f6c9c282abbc9cc8fadd8ebefbb728a06907cfb8d2c42b8b5b08e8c11a",
+      "bytes": 4846,
+      "component": "device-integration-source"
+    },
+    {
+      "path": "package/Tb371fcEmbeddedFat/Tb371fcEmbeddedFat.c",
+      "sha256": "88f508fa267f6cb162f621e542ab21745ede6aa2d69200dbe290ae2fd75bb77f",
+      "bytes": 3666,
+      "component": "device-integration-source"
+    },
+    {
+      "path": "package/Tb371fcEmbeddedFat/Tb371fcEmbeddedFat.inf",
+      "sha256": "0e4e078c8826685354edea039256ef23a3e17720358023f746c60977278280b3",
+      "bytes": 542,
+      "component": "device-integration-source"
+    },
+    {
+      "path": "package/UfsProducerGate/ProducerGate.c",
+      "sha256": "b550aa2cedd3b11bee1827253016a8d93243c0004787da74be2ab177db177545",
+      "bytes": 5051,
+      "component": "device-integration-source"
+    },
+    {
+      "path": "package/UfsProducerGate/ProducerGate.h",
+      "sha256": "d0c5e010266b425cdd4800973075f6566ea15468bffbe49de84d724b5473c26e",
+      "bytes": 650,
+      "component": "device-integration-source"
+    },
+    {
+      "path": "package/RootLog/Journal32.c",
+      "sha256": "33dd9a31c4d5f83d6b499ddacd46bff2d65bd1c38b46666c71887742b7a13a97",
+      "bytes": 4863,
+      "component": "journal-common-source"
+    },
+    {
+      "path": "package/RootLog/Journal32.h",
+      "sha256": "98f1a528237a762459cc6610b44f4629a5daecd1e2c1028bd90a6cf8c4fcead8",
+      "bytes": 735,
+      "component": "journal-common-source"
+    },
+    {
+      "path": "package/RootLog/RecorderPolicy.h",
+      "sha256": "62a94b13dc942b64ca79f26b043b48859aff02430e84d248930bb9402f65e973",
+      "bytes": 609,
+      "component": "journal-common-source"
+    },
+    {
+      "path": "package/RootLog/WriteGate.h",
+      "sha256": "11181086b9750b68a0e7da8cc50413025a398e125d20c0d0d6fdbef5bf7d0bbe",
+      "bytes": 871,
+      "component": "journal-common-source"
+    },
+    {
+      "path": "package/RootLog/RootLog.h",
+      "sha256": "182a160b97002f2f32b5bf98c64c41faed94c666cdeda7a3c68715f59e4cd9f0",
+      "bytes": 7182,
+      "component": "journal-common-source"
+    },
+    {
+      "path": "drivers/AdrenoMetal/CacheExport.h",
+      "sha256": "a857be72899e8e1b6b04c0cce5f40e36b5779e06850285a0c796b44d71205cd1",
+      "bytes": 16704,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/CopyRowsAir.h",
+      "sha256": "5224b25e95a8331a49ea5ab3a65db9a5fa2cbd15e248a6b67295b58fac09f504",
+      "bytes": 25793,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/ExceptionDiag.h",
+      "sha256": "86bc694b8b93dd450cbf081c6d44f01742565d2132a020846f41ed2a072e118e",
+      "bytes": 2295,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/GpuScanoutClient.h",
+      "sha256": "326d8db567d08f27c69ecd70a45eef3d41d1e5960e8a7eafc211649d7a2d5674",
+      "bytes": 12904,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/GpuScanoutPresenter.h",
+      "sha256": "b9d2ef25d551f0b46ce6419a02930110882f39aabbdd938b65f357f76618161d",
+      "bytes": 19010,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/HostMetalCommandServer.h",
+      "sha256": "8cfd04e1231659dce2a487013aa41a8e447e9703eb6eaebe443380bbf60eece3",
+      "bytes": 223,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/HostMetalCommandServer.mm",
+      "sha256": "681945e0fd66b1d7e11ce6865bd0237ae21f9f658f8b54c194f9a2991369bef8",
+      "bytes": 59947,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/LICENSE",
+      "sha256": "c51a32dfc2140d3d56f796a3a7010e574f2e3649b97c42e010303ad57f848265",
+      "bytes": 1081,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeAdrenoMetalPlugin.mm",
+      "sha256": "4b9b22c7007f2eac8907e1ee455d63cc03e0f0b25f5a5e5bb0514443175c1dda",
+      "bytes": 30953,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeAdrenoProbeDaemon.cpp",
+      "sha256": "c580c7c637f3677643f2ace76b78458008a90d6ce9a36126ea75922c21b6f65a",
+      "bytes": 1436,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeAdrenoUserTest.h",
+      "sha256": "3b535cf6e08b1af4b71a7340b067de79658e49c4bd624369e16310772f0036dd",
+      "bytes": 35840,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeBridgeMetalFrontend.h",
+      "sha256": "5ebaf4ee28d04ce92e48da9a1c29b3132dc8377b6e3231e29693ef37d9631bc7",
+      "bytes": 3281,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeBridgeMetalFrontend.mm",
+      "sha256": "d7639a0b91c82f4f29d2bd64281d0249856a727a744d5d66e7cca5d122900bc4",
+      "bytes": 195481,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeIOGPUProviderProbe.cpp",
+      "sha256": "e62fcf1015edffe596c79cc0b42bf24228051234e092bcf22b4bdea2e1136c0c",
+      "bytes": 3793,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeMetalBridgePhase.h",
+      "sha256": "d5c5c2624421233df876ee080fc6553dbbf7067ad8d73cefcb09104a882fe1fa",
+      "bytes": 10838,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeOfflineAccelerator.cpp",
+      "sha256": "c9afd3dc3b0924370232f9da04273d5aabe0274f5cd624af65882f3fb7cabe33",
+      "bytes": 753,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeOfflineGPU.cpp",
+      "sha256": "e443cc4a7001cc1f8f9d05e940b6776fbc14fe07198eaf6fd0378aa4f480047f",
+      "bytes": 21143,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeOsLogExport.mm",
+      "sha256": "fcfb808fd7ddf742f626dcddbc2733b0335727b6c9b607f287fe2e46e7d659e4",
+      "bytes": 5044,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/NativeTurnipSmoke.h",
+      "sha256": "93c06b282501c0881224c7ded9f66ac3424e485827da2cb6adca70176ce91d48",
+      "bytes": 35867,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalCommandWire.h",
+      "sha256": "414efa751a89014242c5399d82390ea4764d7463c8a854856840078ccfe17f9a",
+      "bytes": 546,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalDepthStencilWire.h",
+      "sha256": "0eb7dde2abd1700d7338d2cee02f2443192d624a51824fbeb0a35f95a72a69f6",
+      "bytes": 1191,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalEventWire.h",
+      "sha256": "081d6e455aa7bf2b5639b24f9b2fde2cbc4dbc90aad9e0729bc32d0e4e938228",
+      "bytes": 516,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalFenceWire.h",
+      "sha256": "e56f167263263963c54bd8c1498e30e4a1fcb0524e0397b3a074a95c809a2485",
+      "bytes": 663,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalFrontend.mm",
+      "sha256": "9452728b47789ee99ae29a7a8898016edb333a7eb058ff88ccc40b1fe6b23e56",
+      "bytes": 75688,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalFunctionWire.h",
+      "sha256": "1102f8b9ab25edcddd1f4ec9c8d0007047a25c7f2bf8c4c8b10681575f031393",
+      "bytes": 1362,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalPlugin.mm",
+      "sha256": "7234772c6af6e2c5aec185f1d4a66c77f240c62b5edab006ec31441d66371c61",
+      "bytes": 1987,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalQueueWire.h",
+      "sha256": "8d82bdc86d43027825e6d227347c0a8aedce89ec28c62bdaac8b4ea95b33f143",
+      "bytes": 420,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalSessionWire.h",
+      "sha256": "03d6ac0bec83be6f35895af80b4bb45513e300fca357f155ec0155da9facb9bb",
+      "bytes": 461,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalSharedEventWire.h",
+      "sha256": "45c7daa2c1de61ca758c4be56b80e7cbfd34475c7da46f8fe8ce8a4ef5e1b747",
+      "bytes": 893,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalTextureWire.h",
+      "sha256": "bf898f4d940ffc99812ce6df8244f8099ff76efcf113cb95e6fc9b031a289451",
+      "bytes": 551,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalVertexWire.h",
+      "sha256": "bebf27559082c7742cbf5e40780c10b3044966a866e95a5f2c7efb734ace76b3",
+      "bytes": 1848,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OfflineMetalWire.h",
+      "sha256": "8c52d55df800c7d60a62c647fd2cb69208f1be2d4571b152384e0ca657dabf95",
+      "bytes": 2781,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OriginalAcceleratorABI.h",
+      "sha256": "211e922f9b760ddec2e3453db6584bac57597b3d39e4bf0d013c1b2debd53365",
+      "bytes": 574,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/OriginalGPUProviderABI.h",
+      "sha256": "e7c7c25f4ad8c909e78ae1bb647cccd12fb3201d2787157e610b3d9a03b269c5",
+      "bytes": 2698,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/PrimeShaders.h",
+      "sha256": "585d9d0ce36561b7704eeba62c80c77718adb6434a56735f0f26356b0c31888c",
+      "bytes": 18989,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/ScaleKernelAir.h",
+      "sha256": "2a94af79c54b120ee9b5807213308cf826b621532d09329a5deaceed04dc3621",
+      "bytes": 31703,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/FrontendChecks.h",
+      "sha256": "f13281e96fdbb4b1f6633bf0648df146c8bf5d6db5648b319f19466257838217",
+      "bytes": 29844,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/NativeMetalBridge.h",
+      "sha256": "5deb52c8cbb9097e8431f719cced1b534eed5a1e87410ca86f78478c09b08448",
+      "bytes": 1145,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/NativeMetalBridge.rs",
+      "sha256": "10bc30e6f2f9ee8c9d92d16f3355c2fa9698f228e7462b01efb6ec750ab76862",
+      "bytes": 18515,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/NativeMetalObjects.h",
+      "sha256": "ebbc8d7ddd4bf0dbd75e951453f3c5ddf000e33e148168111f365ad6bc56bfd5",
+      "bytes": 19752,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/NativeMetalObjects.rs",
+      "sha256": "72ae395c8b9c85b80bc73fda39589e1405e7687c4c648f4c4fc0029d06df4be8",
+      "bytes": 97090,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/archive_host.mm",
+      "sha256": "45f1d59551c436c93d735b83f77b0687d902763b7537e2e6ab369780199600dd",
+      "bytes": 3875,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/bridge_smoke.cpp",
+      "sha256": "e72636da8e7309a9022b39ba111a02d6d653590592440f301fc9d40338827f98",
+      "bytes": 1215,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/cache_export_host.cpp",
+      "sha256": "848f6674de45ca59f4efc104a3f0bded9fbbe7f07c1e240b2a21992d94622f89",
+      "bytes": 4129,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/carenderer_host.mm",
+      "sha256": "c145ba7ad67974db4ca1fc1fcb70df9e5fac61e69383134426927c94c6719dc0",
+      "bytes": 9609,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/compute_archive_host.mm",
+      "sha256": "6dd795f9e07381f1ff5154def954d8689b440ba9ee5dd73a0ff3a326a1a1d93a",
+      "bytes": 6025,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/driver_cache_host.cpp",
+      "sha256": "b3667a5ca948a82a05c15b45955ea3b4ce0688c56c5e892dc938f44b4020b6a0",
+      "bytes": 4163,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/frontend_host.mm",
+      "sha256": "1e433131a7d9fd97b953aa5b21a66d67080c2eb64067e9fcfacdb53d6dba26f3",
+      "bytes": 2074,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/graphics_cache_loader.cpp",
+      "sha256": "e67a30a638a8abfab023036c32e953ffa799d4b79ba001f9ab20445362b621a7",
+      "bytes": 7724,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/import_count_loader.cpp",
+      "sha256": "a725dcd146d258ab6d41a16cb1a3ff69af62aeed7488b7d57d4f33e5c0fce4e3",
+      "bytes": 2990,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/nil_args_host.mm",
+      "sha256": "5da9821f6e82e6aca7eac311e9b7395232c50948a75eb19479b8931d00ba0ae5",
+      "bytes": 2756,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/no_copy_import_host.mm",
+      "sha256": "8ee6eaba59079fa0905f04626fa5b4366f32282a1b4c79dd40673a11043167e3",
+      "bytes": 8365,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0001-optional-constant-output-members.patch",
+      "sha256": "4873084b07b44f7dd3dc3419fb8d758e275fd630435a3c7de3939219a41f5846",
+      "bytes": 2717,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0002-resource-wait-storage-dependencies.patch",
+      "sha256": "fc1d13dc6e8fbdb0f7bc5e7e5a8144e4e1a4a148586a89384d4ed7645b7c2712",
+      "bytes": 3188,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0003-cache-device-entry-point-priming.patch",
+      "sha256": "f734b0811904ff096df4f7f0b44e410f0ad046af1bda8ee2a4b52363b3cd92ba",
+      "bytes": 10096,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0004-fold-constant-global-field-loads.patch",
+      "sha256": "1b00fe99626deffb1343b676d12c6929c4eafe9710f175ce97f13ffcc788a5c1",
+      "bytes": 16679,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0005-keep-module-decodes-and-profile-fingerprints.patch",
+      "sha256": "03e9968db60fead33992d941a18f37291afc18b9fc981f388f844450c3ec35b4",
+      "bytes": 5477,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0006-skip-draws-without-a-pipeline.patch",
+      "sha256": "3ee976e3e134c1f0fc1758c910fe75768a1338286ecf55970537fa783f3298cf",
+      "bytes": 973,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0007-accept-two-plane-rgb-surfaces.patch",
+      "sha256": "46ca65bca700387d46da4e8fabf0f6a6780b3f8326fd299e0bf1307243ad4301",
+      "bytes": 1645,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0008-alias-padded-rows-of-written-textures.patch",
+      "sha256": "85de75be5dafc49efe40d864096d1dcaceaa6dc5e8dd889d80e3197cb2e0ffeb",
+      "bytes": 1640,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0009-keep-final-pass.patch",
+      "sha256": "7881c40bce460e540ed604d0f54a0cb23e37722be37b4f29ef8ae6c39282f125",
+      "bytes": 6184,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0010-fewer-allocations-per-draw.patch",
+      "sha256": "62fcd8fadd384c60f9182d0473d152e532f7a0bea5076646fd5cc0f5309f6c6c",
+      "bytes": 24096,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0011-keep-draw-commands.patch",
+      "sha256": "bb2c1ee62244a9222ff9ccc5d2fd0cbb32e9c57e188d095f91c6096a1ae1785f",
+      "bytes": 14130,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0012-keep-draw-lists.patch",
+      "sha256": "1bef12971d738bdcf5d9d16eb4b0334e66f6f27c4072b81b16fea5da48510108",
+      "bytes": 12588,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0013-skip-unchanged-rebinds.patch",
+      "sha256": "4f64a4472acbc6ef7da935f42178dfd1ec03d3e6a66ba2a04a23239e2692ca17",
+      "bytes": 18256,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0014-map-tracker-keys.patch",
+      "sha256": "1d0d0f844bb87dc3c97cbcdca46105d514344aa8245fa807f87180754f438c55",
+      "bytes": 2759,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0015-two-plane-shadow-as-memory-lies.patch",
+      "sha256": "3798fc1bd1c4605e87afb06e0126d88016e5e8805edc483ffe19f13379f7e326",
+      "bytes": 2733,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0016-tile-stores-within-rows.patch",
+      "sha256": "d85734d692626c706e93346bd9ac103efa342dbe38a9a447b6b1957cb43f4a04",
+      "bytes": 3963,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0017-reuse-owned-descriptor-pools.patch",
+      "sha256": "08718e322a34cf600caa76a1fc53a9b526fda63ee878eabb79a9b40fb3a32306",
+      "bytes": 3636,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0018-order-only-fetching-pipelines.patch",
+      "sha256": "54d1348b5e81c5ff9eb24958ed12b66c69c3e2b22ef7b7f6f4c50c14f1b6a689",
+      "bytes": 1722,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0019-one-copy-for-a-padded-frame.patch",
+      "sha256": "fe027142cf75452d8eb7c99bce19995c3baebf1b487a68d4ae52221f6c34b8d8",
+      "bytes": 5526,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0020-census-of-the-scanout-copy.patch",
+      "sha256": "12fc528f4750ff85d3e4712f56f28b96c9aab8f6e4927528f631ec79e59f5115",
+      "bytes": 3857,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/patches/0021-phase-timings-of-a-draw-a-close-and-a-commit.patch",
+      "sha256": "6b6ee798be1ccc2bd415ab91d84383373b13989507726b04ff6f0c8ad949f145",
+      "bytes": 11530,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/pipeline_timing_host.mm",
+      "sha256": "bb91248b488a2795eb0d36aae19b731a023976519a4bb30c86f44332ec8657e4",
+      "bytes": 7731,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/plugin_sequence_host.mm",
+      "sha256": "67cc545af7cfbbefdf80d3644abf054f3ba39a2e826037f6d629ae25ba4872db",
+      "bytes": 1723,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/present_host.mm",
+      "sha256": "631717821d3cd4c8f44dc9964972a64f326f55a77646da2bb96188055d5352c2",
+      "bytes": 3355,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/priming_cache_host.cpp",
+      "sha256": "515f12ee751a49bb75f0dee0b6f680aa28a1a1ce184f3d9cdf5579eac04cdf10",
+      "bytes": 2730,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/priming_cache_ios.cpp",
+      "sha256": "f24205feb3d723aee2da508ffa0d58f88ee5ac3502d101e4cb95256cd968ce47",
+      "bytes": 4008,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/priming_cache_loader.cpp",
+      "sha256": "850ee2046f1f0b93c791de9a9da3ceaea696330e8c8aa72f6400a8d63724056d",
+      "bytes": 4666,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/quartzcore_blur_host.mm",
+      "sha256": "fbe66542e4e21bf1b18483d77e122e166deedf3dbb33cda36b679d80dbc60f25",
+      "bytes": 15628,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/quartzcore_cache.mm",
+      "sha256": "eba452cfe53cf40692d00559aa610444fe2f324d8d54fbb5e0ddfe326c958e12",
+      "bytes": 8984,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/quartzcore_cache_ios.cpp",
+      "sha256": "c8ef6a529c2e956999663a9a598d61a8af0cded5d7953bfa6cac6e4ae7120da4",
+      "bytes": 9520,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/quartzcore_cache_provisioned_ios.cpp",
+      "sha256": "213d0efd8c10663b143ec42b5258a67bb5c0480f6dfed20421619aa5e87c4acd",
+      "bytes": 2288,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/register_host.mm",
+      "sha256": "ce421d5b40802e205e23230197e92a51c0dd10e1e34c90b00ca8ed118ac38d71",
+      "bytes": 1610,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/resource_lifetime_host.mm",
+      "sha256": "743f378fe39c7cf7eb51fb77037b93fb2dfe9c56ee2be28e013d228e1f1f570b",
+      "bytes": 8156,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/resource_wait_host.mm",
+      "sha256": "167adaf98e1a6e0e9db0d5661062e6c26d538534f1aea4712c19f2f8db10b2b2",
+      "bytes": 8553,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/scheduled_host.mm",
+      "sha256": "946bf1d166e9dcaaf7bb6e55a4a3aa3fb5d3718726c5acc55cde60b45187b9d5",
+      "bytes": 4024,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/selector_coverage_host.mm",
+      "sha256": "22bf2154056724ef2d7733ffc6bfed9c7737fdceb599a4473d957cc9d8d039a1",
+      "bytes": 5167,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/surface_flush_host.mm",
+      "sha256": "14733d2ab746c3931bd1f9e5a73a08512111c867623bde68b3d0091e016f3413",
+      "bytes": 6329,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/surface_import_host.mm",
+      "sha256": "527602e41196dcb5ec1ba172d81a636e1765bfcea150665a2063405a2e7b4f4f",
+      "bytes": 10178,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/telemetry_host.mm",
+      "sha256": "b181607f4bc03ef97a6e1e4de51b9826302db9fbac426e42c5fad21c6742811c",
+      "bytes": 3431,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/bridge/uber_diff_host.mm",
+      "sha256": "2037f21288a06eaac6cb360b777b098cad0fc458b252d1ffb8e3edf85675df4c",
+      "bytes": 11951,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/AdrenoMetal/tools/MetalVulkanProbe.rs",
+      "sha256": "9da882cf2c51e02ef30e13d10be9669d4bcb610afbd3dd28f26b9618472d9728",
+      "bytes": 6504,
+      "component": "pipa-metal-pinned"
+    },
+    {
+      "path": "drivers/Adreno650/LICENSE",
+      "sha256": "16fbc0170994a48f60938d9f0d992d3bad113383cf90882f75c206e079c2a2dc",
+      "bytes": 1082,
+      "component": "upstream-license"
+    },
+    {
+      "path": "drivers/ArmSmmu4K/LICENSE",
+      "sha256": "7a730b868c1ff986cdfc210a7b140ab4e0a31bf7db1d15db901427973efaa70f",
+      "bytes": 1079,
+      "component": "upstream-license"
+    },
+    {
+      "path": "package/Tb371fcGpu/LICENSE",
+      "sha256": "5b1d3d911103cb0f41641ec0964c5ac1f7e229f57aa072b6ac38bae913a1307b",
+      "bytes": 2673,
+      "component": "upstream-license"
+    },
+    {
+      "path": "package/Tb371fcDisplay/LICENSE",
+      "sha256": "03a8ab50f4b3b4c65f070d07302a3522e7badbf54dde090cca59bb3e746bba3f",
+      "bytes": 2682,
+      "component": "upstream-license"
+    },
+    {
+      "path": "package/QcomGeniSpi/LICENSE",
+      "sha256": "45e326bc5ca67488a547a30fbb713f1303d2770b3340443ebcf38717a62534f9",
+      "bytes": 2645,
+      "component": "upstream-license"
+    },
+    {
+      "path": "package/ShengHidInput/LICENSE",
+      "sha256": "fc56b096347b83da4a300f97ad6182484941bbeff8becf91914b7fdc203d5a9f",
+      "bytes": 2681,
+      "component": "upstream-license"
+    },
+    {
+      "path": "package/NovatekProtocol/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "component": "upstream-license"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "5b1d3d911103cb0f41641ec0964c5ac1f7e229f57aa072b6ac38bae913a1307b",
+      "bytes": 2673,
+      "component": "upstream-license"
+    },
+    {
+      "path": "LICENSES/MIT-NativeAdreno.txt",
+      "sha256": "16fbc0170994a48f60938d9f0d992d3bad113383cf90882f75c206e079c2a2dc",
+      "bytes": 1082,
+      "component": "upstream-license"
+    },
+    {
+      "path": "LICENSES/BSD-2-Clause-Patent.txt",
+      "sha256": "5b1d3d911103cb0f41641ec0964c5ac1f7e229f57aa072b6ac38bae913a1307b",
+      "bytes": 2673,
+      "component": "upstream-license"
+    },
+    {
+      "path": "upstream/ufs-source-lock.json",
+      "sha256": "8cd19620aaf14c81f669b6a8f06e6b7def9cdf50f6e43db0a812333554727775",
+      "bytes": 1929,
+      "component": "ufs-upstream-pin"
+    },
+    {
+      "path": "tests/tb371fc_buttons_test.c",
+      "sha256": "527f9e2a3ac81c1da0e2d9b7912dd391915cab202d6832e3c2cca5740f59e3ab",
+      "bytes": 1124,
+      "component": "portable-input-test"
+    },
+    {
+      "path": "tests/tb371fc_touch_report_test.c",
+      "sha256": "7e34a57620c0c574830386a1dbc0129b928496f2bc324a788edaa4ff86586c77",
+      "bytes": 4069,
+      "component": "portable-input-test"
+    }
+  ]
+}
