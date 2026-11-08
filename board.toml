@@ -1,0 +1,14 @@
+# Catalog identity for the V129 source snapshot; not a complete build recipe.
+schema_version = 2
+
+[board]
+example = true
+name = "tb371fc"
+soc = "SM8250"
+os_profile = "ipados-17.7.11-21H461"
+description = "Lenovo Xiaoxin Pad Pro 12.7 (2023) / TB371FC"
+
+[components]
+# Upstream component build wiring is not exported/qualified yet. Source coverage
+# lives in porting.toml; an empty list does not mean hardware drivers are absent.
+include = []

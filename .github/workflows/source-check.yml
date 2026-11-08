@@ -13,3 +13,5 @@ jobs:
           persist-credentials: false
       - name: Check source snapshot and repository contents
         run: python3 scripts/check_repository.py
+      - name: Check official device catalog records
+        run: python3 scripts/check_catalog.py

@@ -1,10 +1,10 @@
 # 构建说明
 
-本仓库首先保存实际使用的设备驱动和修改来源。当前 `device.toml` 是设备元数据，**不是已接通上游通用构建器的 board 配置**，`independent_build_ready=false`。
+本仓库首先保存实际使用的设备驱动和修改来源。当前 `device.toml` 是设备元数据，**不是已接通上游通用构建器的 board 配置**，`independent_build_ready=false`。新增 `board.toml` 仅提供官网目录身份（`example=true`、空组件构建列表），不能用于完整系统构建；`porting.toml` 的适配进展不构成一键编译承诺。
 
 ## 已验证的构建环境
 
-现有 V129 由原移植工作区在 macOS 原生环境中编译、链接、预链接和打包，并通过实际镜像审计。构建使用 Xcode 的真实 SDK、原生 Apple 工具和 iOS arm64 工具链。公开仓库的 CI 只核验源码完整性，不会构建 iPadOS 或运行设备测试。
+现有 V129 由原移植工作区在 macOS 原生环境中编译、链接、预链接和打包，并通过实际镜像审计。构建使用 Xcode 的真实 SDK、原生 Apple 工具和 iOS arm64 工具链。公开仓库的 CI 只核验源码完整性与官方适配记录格式，不会构建 iPadOS 或运行设备测试。
 
 ## 此快照包含什么
 
