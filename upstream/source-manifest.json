@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "baseline": "V129",
+  "baseline": "V135",
   "files": [
     {
       "path": "drivers/A650Gmu/A650Gmu.c",
@@ -1357,6 +1357,24 @@
       "sha256": "7e34a57620c0c574830386a1dbc0129b928496f2bc324a788edaa4ff86586c77",
       "bytes": 4069,
       "component": "portable-input-test"
+    },
+    {
+      "path": "package/Tb371fcDisplay/NativeLegacyDisplay.cpp",
+      "sha256": "42d5f1fd8c9f92ce718029749d9c38611c20cad22d44311a2fdfe5492785cf3d",
+      "bytes": 37538,
+      "component": "display-v135"
+    },
+    {
+      "path": "package/Tb371fcDisplay/NativeLegacyRequest.h",
+      "sha256": "81e89e1f40f2f1d0919567f53bc0564c650488843082693d00b9ea256cafae21",
+      "bytes": 9893,
+      "component": "display-v135"
+    },
+    {
+      "path": "patches/v135-display-timing-query.patch",
+      "sha256": "42f0ad25ca328b922542d710a453b5cf068afd83c90d7688b5bc4b4f8e7211e2",
+      "bytes": 862,
+      "component": "display-v135"
     }
   ]
 }

@@ -1,39 +1,39 @@
-# 构建说明
+# V135 构建
 
-本仓库首先保存实际使用的设备驱动和修改来源。当前 `device.toml` 是设备元数据，**不是已接通上游通用构建器的 board 配置**，`independent_build_ready=false`。新增 `board.toml` 仅提供官网目录身份（`example=true`、空组件构建列表），不能用于完整系统构建；`porting.toml` 的适配进展不构成一键编译承诺。
+公开仓库提供了确定的本机入口；目标系统和设备数据属于本地私有输入，不会从 GitHub 下载。构建目标是 V135，不是从干净的 XNU 源码重新编译系统内核。
 
-## 已验证的构建环境
+## 生成 boot 镜像
 
-现有 V129 由原移植工作区在 macOS 原生环境中编译、链接、预链接和打包，并通过实际镜像审计。构建使用 Xcode 的真实 SDK、原生 Apple 工具和 iOS arm64 工具链。公开仓库的 CI 只核验源码完整性与官方适配记录格式，不会构建 iPadOS 或运行设备测试。
-
-## 此快照包含什么
-
-- 与当前构建来源对应的 A650 / SMMU / GMU 源码，包含 V129 分配策略。
-- V128 恢复输入启动后的显示生命周期。
-- V121 触摸、V122 按键与组合 HID 生命周期。
-- 当前 Metal 前端、Rust 桥接及固定的 21 项 Pipa 补丁。
-- 启动恢复、内嵌 FAT、平台电源及通用日志组件。
-- 固定上游提交和复制源码的校验清单。
-
-## 尚需从本地流程整理的依赖
-
-1. XNU 完整补丁顺序、原生构建配方、owner root / SystemOS union / Data 组合及内核预链接。
-2. 与所选系统 build 对应的 ABI 生成与审核步骤。仓库没有生成后的原始系统 ABI 绑定、原始 Apple 二进制或信任缓存。
-3. 目标设备触摸与 GPU 固件。需自行取得并在本地验证；不会通过本仓库分发。
-4. 系统文件、持久 Data、每台设备的日志区域和恢复备份。不能照搬维护者的设备身份、分区 GUID、日志令牌或消费过的测试记录。
-5. Metal / Mesa / shader assets / trust / addon 的完整构建配方及原生环境安装。当前 21 项补丁对应 `sources.lock.json` 内的 translator 提交；不能直接换成另一个 HEAD。
-6. 最终 UEFI / Android boot 打包参数与实机操作门禁。
-
-`package/RootLog` 保存通用源码，不包含运行绑定。GPU 及 HID 中对生成 ABI 头和外部固件符号的引用是预期依赖；单独编译这些目录并不能得到完整系统。
-
-## 当前可执行的仓库检查
+需要原生 macOS、Python 3.11 或更新版本、Xcode 命令行构建工具，以及本地 V135 输入包。完整重编固件还需要输入包内保留的 EDK2 与 SimpleInit 源码和 LLVM 工具链。
 
 ```sh
+git clone https://github.com/xiuyityer/UniXNU-tb371fc.git
+cd UniXNU-tb371fc
 python3 scripts/check_repository.py
+python3 scripts/build_v135.py \
+  --inputs /path/to/private-v135-inputs \
+  --output /path/to/new-v135-build \
+  --tools /path/to/private-v135-inputs/native-tools/bin
 ```
 
-只需 Python 3.9 及以上。检查导出源码的 SHA-256、上游固定版本和公开目录内容；不会下载系统、运行模拟器或连接设备。
+每个 --output 必须是新目录。命令不访问 USB、fastboot 或任何设备。正常模式会基于已留存的 V131 父内核执行 V135 定点派生，重新编译固件和 BootShim，并按 Android boot v1 格式打包。构建记录会明确标注没有完整重编 XNU、没有设备测试。
 
-## 后续整理顺序
+若目标只是快速生成与已验证 V135 字节一致的 boot 镜像，可用 --quick-pack。它使用已留存的 V135 固件，只重编 BootShim 并重新打包；含完整私有工具哈希校验的本机实测约 13.5 秒。正常固件构建从私有 capsule 工具本机实测约 150 秒。耗时受 Mac 和工具版本影响。
 
-先把原工作区中当前实际构建来源迁入可重建流程，再提供构建命令和安装说明。保留原来的恢复入口、手动菜单、一次性测试归属；尚不发布可直接照抄的刷写命令。
+正常重编固件的候选镜像可能与原 V135 不同；该路径只证明源码可独立编译并生成镜像。需要准确恢复已验证镜像时用 --quick-pack，其 SHA-256 应为 1a5265f9fcbb19314510310c0e341c98c88f96b58ab9a99aeecf39c9e0fb3174。
+
+## 应用安装元数据
+
+首次创建 Data 或重建应用安装状态时，完整应用包必须已经由匹配的 21H461 系统输入放入 Data。把离线 Data 卷挂载到本机后，先生成只读计划：
+
+```sh
+python3 scripts/prepare_apps_v135.py --data-root /Volumes/Data
+```
+
+元数据来源默认为 Data 中可验证的原生 metadata；缺失或不匹配时回退到 V132 修复时保存的原生 metadata。也可用 --metadata-root 指向从本机原始输入恢复的对应 container 目录。检查计划后才加 --apply。应用会保留完整应用可执行文件，备份被替换的 metadata 与 xattr，并移动旧 LaunchServices 缓存到同一 Data 卷的时间戳备份目录。该命令只操作显式指定的离线本机目录，不接受块设备路径，也不复用旧的物理页增量。
+
+## 私有输入
+
+公开源码不含 Apple 固件、OS/SystemOS、完整目标 Data、生成 ABI、GPU addon/trust 输入或原 bootloader 恢复备份。维护者的本机归档位于工作区忽略的 research/v135-resume-private-2026-11-09/，不上传到此仓库。重建时需要这一输入包，或者用匹配的本机 21H461 原始输入重新生成它。inputs.json 校验打包的构建源和父内核；稀疏 OS/Data 分卷另有逐块摘要。仓库没有发布可直接刷写或可公开分发的完整系统。
+
+旧物理测试 runner、ledger、分区位置和设备恢复记录属于单次操作证据，不能用于新设备或重放。设备恢复/写入需按当时设备状态单独核对；本构建器不会执行这些动作。

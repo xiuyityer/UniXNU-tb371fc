@@ -4,7 +4,7 @@ schema_version = 1
 name = "tb371fc"
 soc = "SM8250"
 os_profile = "ipados-17.7.11-21H461"
-summary = "V129 源码快照；实机桌面、触摸、GPU、电源键已报告可用；独立构建、应用、电池及其他功能仍有缺项。"
+summary = "V135 实机基线；应用、设置、触摸和 GPU 正常；壁纸仍黑并暂停调试。公开构建入口需要本地私有输入，完整 XNU 源码重编译及电池/音量键仍未完成。"
 
 [[area]]
 id = "configuration"
@@ -242,12 +242,12 @@ status = "implemented"
 components = []
 paths = ["docs/BUILDING.md", "upstream/source-manifest.json"]
 inputs = ["真实 macOS/Xcode 工具与维护者自行准备的系统/固件输入。"]
-configuration = ["V129 使用原工作区的编译、链接、预链接与 boot 打包流程。"]
+configuration = ["V135 从保留父 kernel 作定点二进制派生；公开脚本在原生 macOS 重编 EDK2 固件、BootShim 和 boot 镜像。"]
 procedure = ["构建后校验实际镜像，再将源、产物哈希、运行与物理结果对应。"]
-findings = ["V129 原工作区产物审计通过且用户确认桌面运行；公开摘要保留 boot/kernel 哈希。"]
-completion = ["镜像归属明确且可从公开输入说明重建。"]
-limits = ["公开仓库当前仅源码快照，完整独立构建仍未完成；CI 不构建 iPadOS。"]
-next_action = ["迁入完整构建配方后再提供可复现的镜像生成说明。"]
+findings = ["V135 quick-pack 使用本地私有输入复现已确认镜像 SHA；干净固件源码构建生成未实机测试的不同候选。"]
+completion = ["有精确的快速恢复入口及清晰标注的源码构建边界。"]
+limits = ["完整 XNU 源码构建未接通；生成完整系统仍需私有 Apple 系统、ABI、固件、Data 与恢复输入；CI 不构建 iPadOS。"]
+next_action = ["后续从 V135 稳定基准继续接通 XNU 构建，按用户指定恢复实机任务。"]
 
 [[area.evidence]]
 kind = "source"
